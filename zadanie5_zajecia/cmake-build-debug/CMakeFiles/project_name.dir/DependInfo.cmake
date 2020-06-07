@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/olga/Pobrane/zadanie5_zajecia/src/cuboid.cpp" "/home/olga/Pobrane/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/cuboid.cpp.o"
-  "/home/olga/Pobrane/zadanie5_zajecia/src/gnuplot_link.cpp" "/home/olga/Pobrane/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
-  "/home/olga/Pobrane/zadanie5_zajecia/src/main.cpp" "/home/olga/Pobrane/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/main.cpp.o"
+  "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/cuboid.cpp" "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/cuboid.cpp.o"
+  "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/gnuplot_link.cpp" "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
+  "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/main.cpp" "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/main.cpp.o"
+  "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/solid.cpp" "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir/src/solid.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

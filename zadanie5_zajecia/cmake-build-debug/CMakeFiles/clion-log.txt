@@ -1,4 +1,4 @@
-/home/olga/Pobrane/CLion-2019.3.4/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/olga/Pobrane/zadanie5_zajecia
+/home/olga/Pobrane/CLion-2019.3.4/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia
 -- The C compiler identification is GNU 7.5.0
 -- The CXX compiler identification is GNU 7.5.0
 -- Check for working C compiler: /usr/bin/gcc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/olga/Pobrane/zadanie5_zajecia/cmake-build-debug
+-- Build files have been written to: /home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug

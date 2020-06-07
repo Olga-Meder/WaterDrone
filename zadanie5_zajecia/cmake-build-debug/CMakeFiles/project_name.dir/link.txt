@@ -1,1 +1,1 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/project_name.dir/src/cuboid.cpp.o CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o CMakeFiles/project_name.dir/src/main.cpp.o  -o project_name 
+/usr/bin/g++  -g  -rdynamic CMakeFiles/project_name.dir/src/cuboid.cpp.o CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o CMakeFiles/project_name.dir/src/main.cpp.o CMakeFiles/project_name.dir/src/solid.cpp.o  -o project_name 

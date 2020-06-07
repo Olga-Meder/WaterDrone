@@ -2,9 +2,9 @@
 #include <iomanip>
 #include <fstream>
 #include <string>
-
 #include "gnuplot_link.hh"
 #include "cuboid.hh"
+#include "Matrix.hh"
 
 using namespace std;
 
@@ -38,5 +38,12 @@ int main()
 
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
-    cin.ignore(100000, '\n'); 
+ /***********************************************************************************************/
+    cuboid.rotateX(20);
+    cuboid.draw(kDroneFile);
+    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
+
+    cin.ignore(100000, '\n');
+
 }

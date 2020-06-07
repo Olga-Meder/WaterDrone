@@ -1,4 +1,4 @@
-# Install script for directory: /home/olga/Pobrane/zadanie5_zajecia
+# Install script for directory: /home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/olga/Pobrane/zadanie5_zajecia/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

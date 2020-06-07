@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../inc/Matrix.hh
+Vector.hh
+../inc/Vector.hh
+Size.hh
+../inc/Size.hh
+iostream
+-
+math.h
+-
+
 ../inc/Size.hh
 
 ../inc/Vector.hh
@@ -21,6 +31,8 @@ string
 -
 Vector.hh
 ../inc/Vector.hh
+solid.hh
+../inc/solid.hh
 
 ../inc/gnuplot_link.hh
 string
@@ -30,15 +42,47 @@ list
 vector
 -
 
-/home/olga/Pobrane/zadanie5_zajecia/src/cuboid.cpp
+../inc/solid.hh
+vector
+-
+string
+-
+Vector.hh
+../inc/Vector.hh
+Matrix.hh
+../inc/Matrix.hh
+
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/cuboid.cpp
 cuboid.hh
-/home/olga/Pobrane/zadanie5_zajecia/src/cuboid.hh
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/cuboid.hh
 fstream
 -
 iostream
 -
 
-/home/olga/Pobrane/zadanie5_zajecia/src/main.cpp
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/gnuplot_link.cpp
+cstdlib
+-
+cstdio
+-
+cstring
+-
+cmath
+-
+iostream
+-
+sys/stat.h
+-
+unistd.h
+-
+fcntl.h
+-
+sstream
+-
+gnuplot_link.hh
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/gnuplot_link.hh
+
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/main.cpp
 iostream
 -
 iomanip
@@ -48,7 +92,15 @@ fstream
 string
 -
 gnuplot_link.hh
-/home/olga/Pobrane/zadanie5_zajecia/src/gnuplot_link.hh
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/gnuplot_link.hh
 cuboid.hh
-/home/olga/Pobrane/zadanie5_zajecia/src/cuboid.hh
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/cuboid.hh
+Matrix.hh
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/Matrix.hh
+
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/solid.cpp
+solid.hh
+/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/solid.hh
+cmath
+-
 

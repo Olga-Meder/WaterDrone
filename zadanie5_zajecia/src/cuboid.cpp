@@ -4,9 +4,8 @@
 
 using namespace std;
 
-int Cuboid::counter =5;
 
-Cuboid::Cuboid(): angle{0}
+Cuboid::Cuboid()
 {
     ifstream inputFile;
     inputFile.open(kModelCuboid);
@@ -20,7 +19,7 @@ Cuboid::Cuboid(): angle{0}
     Vector3D point;
     while(inputFile >> point)
     {
-        points.push_back(point);
+        points.push_back(point); //tutaj points
     }
     inputFile.close();
 }
@@ -36,7 +35,7 @@ void Cuboid::draw(std::string filename) const
     }
     for(int i = 0; i < points.size(); ++i)
     {
-        outputFile << points[i]+ translation;
+        outputFile << points[i]+ translation; //points  i translation
         if(i % 4 == 3) // triggers after every 4 points
         {
             outputFile << "#\n\n";

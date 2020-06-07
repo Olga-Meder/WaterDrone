@@ -33,6 +33,7 @@ public:
 
     const T &operator()( int index1,  int index2) const;
     T &operator()( int index_1, int index_2);
+    Vector<T,SIZE> operator * (Vector<T,SIZE> v); //mnożenie macierzy przez wektor
 
 
     //przeciążenie operatora wczytania - funkcja zaprzyjaźniona
@@ -64,7 +65,7 @@ public:
 
 };
 
-
+using Matrix3D = Matrix<double,3>; //alias do używania nazwy Matirx3D zamiast szablonu
 /************************************************************************************************/
 
 //obliczanie wyznacznika metodą eliminacji Gaussa
@@ -177,4 +178,17 @@ Matrix<T,SIZE> Matrix<T,SIZE>::ReplaceColumn(Vector<T,SIZE> v, int index) const
     copy.data[index]=v;
     return copy;
 }
+template <typename T,int SIZE>
+Vector<T,SIZE> Matrix<T,SIZE>:: operator * (Vector<T,SIZE> v)
+{
+    Vector<T,SIZE> result;
+    for(int i=0; i<SIZE;i++)
+    {
+        for(int j=0;j<SIZE;j++)
+        {
+            result[i]+=v[j]* (*this)(i,j);
+        }
 
+    }
+    return result;
+}
