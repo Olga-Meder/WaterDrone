@@ -97,6 +97,10 @@ cuboid.hh
 /home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/cuboid.hh
 Matrix.hh
 /home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/Matrix.hh
+chrono
+-
+thread
+-
 
 /home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/src/solid.cpp
 solid.hh
