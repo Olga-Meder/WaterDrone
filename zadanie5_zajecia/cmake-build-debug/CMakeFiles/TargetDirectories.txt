@@ -1,3 +1,0 @@
-/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/project_name.dir
-/home/olga/Pulpit/Programowanie/dron/zadanie5_zajecia/cmake-build-debug/CMakeFiles/edit_cache.dir
