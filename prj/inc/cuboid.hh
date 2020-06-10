@@ -11,7 +11,7 @@ class Cuboid: public Solid{
 
 public:
     Cuboid();
-    void draw(std::string filename) const;
+    void draw(std::string filename) const override;
 
 };
 

@@ -95,13 +95,28 @@
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/Vector.hh">
 			<Option target="project_name"/>
 		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/bottom.hh">
+			<Option target="project_name"/>
+		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/cuboid.hh">
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/gnuplot_link.hh">
 			<Option target="project_name"/>
 		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/mainObject.hh">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/scene.hh">
+			<Option target="project_name"/>
+		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/solid.hh">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/water.hh">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/bottom.cpp">
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp">
@@ -113,7 +128,16 @@
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp">
 			<Option target="project_name"/>
 		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp">
+			<Option target="project_name"/>
+		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/water.cpp">
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/CMakeLists.txt">

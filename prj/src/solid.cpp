@@ -21,7 +21,7 @@ void Solid::rotateX(const double radians)
     }
 
 }
-void Solid::rotateY(const double angle)
+void Solid::rotateY(const double radians)
 {
     matrix_rot(0, 0) = cos(radians);
     matrix_rot(0, 1) = 0;
@@ -39,7 +39,7 @@ void Solid::rotateY(const double angle)
 
     }
 }
-void Solid::rotateZ(const double angle)
+void Solid::rotateZ(const double radians)
 {
     matrix_rot(0, 0) = -cos(radians);
     matrix_rot(0, 1) = -sin(radians);

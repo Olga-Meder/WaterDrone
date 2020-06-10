@@ -4,17 +4,18 @@
 #include <string>
 #include "Vector.hh"
 #include "Matrix.hh"
+#include "mainObject.hh"
 
-class Solid{
+
+class Solid: public mainObject{
 
 protected:
-    std::vector<Vector3D> points;
-    Vector3D translation;
     double angle; //kąt w stopniach
     Matrix3D matrix_rot;
     double radians= angle *(3,1415/180);
 public:
-    Solid() {};
+    Solid() {}; //konstruktor
+    ~Solid() {}; //destruktor
     void translate(const Vector3D& change)
     {
         translation = translation + change;
