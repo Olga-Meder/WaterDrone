@@ -5,7 +5,7 @@
 using namespace std;
 
 //konstruktor i metoda rysowania tak samo jak w Cuboid
-water::water()
+Water::Water()
 {
     ifstream inputFile;
     inputFile.open(kModelWater);
@@ -23,7 +23,7 @@ water::water()
     }
     inputFile.close();
 }
-void water::draw(std::string filename) const
+void Water::draw(std::string filename) const
 {
     ofstream outputFile;
     outputFile.open(filename);

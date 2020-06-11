@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_name.dir/src/scene.cpp.o"
   "CMakeFiles/project_name.dir/src/solid.cpp.o"
   "CMakeFiles/project_name.dir/src/water.cpp.o"
-  "project_name.pdb"
   "project_name"
+  "project_name.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

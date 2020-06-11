@@ -7,7 +7,7 @@
 #include "mainObject.hh"
 
 
-class Solid: public mainObject{
+class Solid: public MainObject{
 
 protected:
     double angle; //kąt w stopniach

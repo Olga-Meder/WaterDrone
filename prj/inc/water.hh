@@ -4,13 +4,14 @@
 #include <string>
 #include "mainObject.hh"
 
-const std::string kModelWater("solid/model.dat");
+const std::string kModelWater("solid/water.dat");
 
-class water: public mainObject
+class Water: public MainObject
 {
-    double height; // wysokość na jakiej jest woda
+    double height=100; // wysokość na jakiej jest woda
 public:
-    water();
-    ~water() {};
+    Water();
     void draw(std::string filename) const override;
+    ~Water() {};
+    double get_height(){return height;}
 };

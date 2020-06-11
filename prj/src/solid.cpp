@@ -2,8 +2,9 @@
 #include <cmath>
 
 
-void Solid::rotateX(const double radians)
+void Solid::rotateX(const double angle)
 {
+    double radians= angle *(3,1415/180);
     matrix_rot(0, 0) = 1;
     matrix_rot(0, 1) = 0;
     matrix_rot(0, 2) = 0;
@@ -14,15 +15,16 @@ void Solid::rotateX(const double radians)
     matrix_rot(2, 1) = sin(radians);
     matrix_rot(2, 2) = cos(radians);
 
-    for(int i=0;i<points.size();i++)
+    for(int i=0;i<this->Size();i++)
     {
         points[i]= matrix_rot*points[i];
 
     }
 
 }
-void Solid::rotateY(const double radians)
+void Solid::rotateY(const double angle)
 {
+    double radians= angle *(3,1415/180);
     matrix_rot(0, 0) = cos(radians);
     matrix_rot(0, 1) = 0;
     matrix_rot(0, 2) = sin(radians);
@@ -39,8 +41,9 @@ void Solid::rotateY(const double radians)
 
     }
 }
-void Solid::rotateZ(const double radians)
+void Solid::rotateZ(const double angle)
 {
+    double radians= angle *(3,1415/180);
     matrix_rot(0, 0) = -cos(radians);
     matrix_rot(0, 1) = -sin(radians);
     matrix_rot(0, 2) = 0;
