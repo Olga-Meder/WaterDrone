@@ -78,6 +78,26 @@ string
 mainObject.hh
 ../inc/mainObject.hh
 
+/home/olga/Pulpit/Programowanie/dron/prj/src/bottom.cpp
+bottom.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/bottom.hh
+fstream
+-
+iostream
+-
+mainObject.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.hh
+
+/home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp
+cuboid.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.hh
+fstream
+-
+iostream
+-
+Matrix.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/Matrix.hh
+
 /home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp
 iostream
 -
@@ -103,4 +123,20 @@ bottom.hh
 /home/olga/Pulpit/Programowanie/dron/prj/src/bottom.hh
 cmath
 -
+
+/home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp
+solid.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/solid.hh
+cmath
+-
+
+/home/olga/Pulpit/Programowanie/dron/prj/src/water.cpp
+water.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/water.hh
+fstream
+-
+iostream
+-
+mainObject.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.hh
 

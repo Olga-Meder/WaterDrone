@@ -45,7 +45,7 @@ int main()
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
 
-    //tutaj obliczamy tylko przemieszczenie środka
+    /*tutaj obliczamy tylko przemieszczenie środka
     double distance;
     double r;
     double a;
@@ -61,33 +61,35 @@ int main()
    Vector3D translation;
     translation[0] = x;
     translation[1] = y;
-    translation[2] = z;
+    translation[2] = z; */
     /*************************************************************************/
     // animacja
-    for(int i=0;i<60;i++)
+   /* for(int i=0;i<60;i++)
     {
         cuboid.translate(translation/10);
         sleep_for(nanoseconds(SLEEP));
         cuboid.draw(kDroneFile);
         link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
         cin.ignore(100000, '\n');
-    }
+    } */
 
- //   cuboid.translate(translation); //tutaj przeniesienie
- //   cuboid.draw(kDroneFile); //wczytanie do tego samego pliku
-
-
+  /*  cuboid.translate(translation); //tutaj przeniesienie
+    cuboid.draw(kDroneFile); //wczytanie do tego samego pliku
 
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
+    double abs;
+    cin>>abs;
+    cin.ignore(100000, '\n'); */
  /***********************************************************************************************/
-   /* cuboid.rotateZ(20);
+    cuboid.rotateZ(5);
     cuboid.draw(kDroneFile);
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
 
-    cout << "Naciśnij ENTER, aby kontynuowac" << endl; */
+    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
 
     cin.ignore(100000, '\n');
 
+    return 0;
 
 }

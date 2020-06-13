@@ -9,10 +9,7 @@
 
 class Solid: public MainObject{
 
-protected:
-    double angle; //kąt w stopniach
-    Matrix3D matrix_rot;
-    double radians= angle *(3,1415/180);
+
 public:
     Solid() {}; //konstruktor
     ~Solid() {}; //destruktor
@@ -20,8 +17,8 @@ public:
     {
         translation = translation + change;
     }
-    void rotateX(const double angle);
-    void rotateY(const double angle);
-    void rotateZ(const double angle);
-
+    void rotateX( double angle);
+    void rotateY( double angle);
+    void rotateZ( double angle);
+    Matrix3D matrix_rot;
 };
