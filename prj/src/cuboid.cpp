@@ -43,7 +43,7 @@ void Cuboid::draw(std::string filename) const
 
     for(int i=0;i<points.size();i++)
     {
-        points[i]= matrix_rot*points[i];
+      //  points[i]= matrix_rot*points[i]; //nie ma przypisania ?
 
     }
     /********************************************/
