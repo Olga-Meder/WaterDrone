@@ -54,9 +54,9 @@ void Solid::rotateZ( double angle)
     matrix_rot(2, 1) = 0;
     matrix_rot(2, 2) = 1;
 
-  /*  for(int i=0;i<points.size();i++)
+    for(int i=0;i<points.size();i++)
     {
         points[i]= matrix_rot*points[i];
 
-    } */
+    }
 }

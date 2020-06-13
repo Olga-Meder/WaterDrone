@@ -45,7 +45,7 @@ int main()
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
 
-    /*tutaj obliczamy tylko przemieszczenie środka
+
     double distance;
     double r;
     double a;
@@ -54,14 +54,14 @@ int main()
     cout<< "jaki kąt?"<<endl;
     cin>>a;
     r=a*3,1415/180;
-    double x=(-1)*distance*cos(r);
+    double x=distance*cos(r);
     double y=0;
-    double z=(-1)*distance*sin(r);
+    double z=distance*sin(r);
 
    Vector3D translation;
     translation[0] = x;
     translation[1] = y;
-    translation[2] = z; */
+    translation[2] = z;
     /*************************************************************************/
     // animacja
    /* for(int i=0;i<60;i++)
@@ -82,7 +82,7 @@ int main()
     cin>>abs;
     cin.ignore(100000, '\n'); */
  /***********************************************************************************************/
-    cuboid.rotateZ(5);
+    //cuboid.rotateZ(5);
     cuboid.draw(kDroneFile);
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
 
