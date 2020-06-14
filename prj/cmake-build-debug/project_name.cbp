@@ -89,6 +89,9 @@
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/Matrix.hh">
 			<Option target="project_name"/>
 		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/MatrixRot.hh">
+			<Option target="project_name"/>
+		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/Size.hh">
 			<Option target="project_name"/>
 		</Unit>
@@ -107,6 +110,9 @@
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/mainObject.hh">
 			<Option target="project_name"/>
 		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/menu.hh">
+			<Option target="project_name"/>
+		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/scene.hh">
 			<Option target="project_name"/>
 		</Unit>
@@ -114,6 +120,9 @@
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/inc/water.hh">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/MatrixRot.cpp">
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/bottom.cpp">
@@ -129,6 +138,9 @@
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp">
+			<Option target="project_name"/>
+		</Unit>
+		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/menu.cpp">
 			<Option target="project_name"/>
 		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp">

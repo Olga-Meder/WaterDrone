@@ -1,6 +1,11 @@
-
+#include "menu.hh"
+#include <iostream>
+using namespace std;
 void menu()
 {
+    char choice;
+    double angle;
+    double distance;
     do
     {
         cout << "MENU:" << endl

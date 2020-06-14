@@ -2,11 +2,12 @@
 #include <fstream>
 #include <iostream>
 #include "Matrix.hh"
+#include <cmath>
 
 using namespace std;
 
 
-Cuboid::Cuboid()
+Cuboid::Cuboid() :angle {0} // wczytanie pliku modelowego
 {
     ifstream inputFile;
     inputFile.open(kModelCuboid);
@@ -25,22 +26,9 @@ Cuboid::Cuboid()
     inputFile.close();
 }
 
+
 void Cuboid::draw(std::string filename) const
 {
-    double angle=45;
-    Matrix3D m;
-    double radians= angle *(3,1415/180);
-    m(0, 0) = cos(radians);
-    m(0, 1) = -sin(radians);
-    m(0, 2) = 0;
-    m(1, 0) = sin(radians);
-    m(1, 1) = cos(radians);
-    m(1, 2) = 0;
-    m(2, 0) = 0;
-    m(2, 1) = 0;
-    m(2, 2) = 1;
-
-
     ofstream outputFile;
     outputFile.open(filename);
     if(!outputFile.is_open())
@@ -50,10 +38,46 @@ void Cuboid::draw(std::string filename) const
     }
     for(int i = 0; i < points.size(); ++i)
     {
-        outputFile <<points[i]+ translation; //pomnożyć to przez macierz?
+        outputFile << points[i]+ translation; //pomnożyć to przez macierz?
         if(i % 4 == 3) // triggers after every 4 points
         {
             outputFile << "#\n\n";
         }
+    }
+}
+
+void Cuboid::rotateZ(double kat)
+{
+
+    MatrixRot rot_matrix('Z',kat);
+    rot_matrix.transpose();
+    for (int i = 0; i < points.size(); ++i)
+    {
+
+        cout<<points[i];
+        points[i] = rot_matrix * points[i];
+        cout<<points[i];
+    }
+}
+
+void Cuboid::rotateY(double kat) {
+
+    MatrixRot rot_matrix('Y', kat);
+    for (int i = 0; i < points.size(); ++i) {
+
+        cout << points[i];
+        points[i] = rot_matrix * points[i];
+        cout << points[i];
+    }
+}
+
+void Cuboid::rotateX(double kat) {
+
+    MatrixRot rot_matrix('X', kat);
+    for (int i = 0; i < points.size(); ++i) {
+
+        cout << points[i];
+        points[i] = rot_matrix * points[i];
+        cout << points[i];
     }
 }

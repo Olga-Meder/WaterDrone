@@ -1,15 +1,11 @@
-/*#pragma once
+#pragma once
 
 #include "Matrix.hh"
 
-class MatrixRot
+
+class MatrixRot: public Matrix3D
 {
-protected:
-    Matrix3D matrix_rot;
 public:
-    void rotateX(const double angle);
-    void rotateY(const double angle);
-    void rotateZ(const double angle);
+    MatrixRot(const char axis, const double &kat);
 
-
-}; */
+};

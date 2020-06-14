@@ -36,11 +36,9 @@ int main()
 
     cuboid.draw(kDroneFile); //funkcja zapisujaca do pliku kDroneFile
     water.draw(kWaterFile);
-    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+//    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
     bottom.draw(kBottomFile);
-
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-
 
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
@@ -53,41 +51,46 @@ int main()
     cin>>distance;
     cout<< "jaki kąt?"<<endl;
     cin>>a;
-    r=a*3,1415/180;
+    r=a*M_PI/180;
     double x=distance*cos(r);
     double y=0;
     double z=distance*sin(r);
-
-   Vector3D translation;
-    translation[0] = x;
-    translation[1] = y;
-    translation[2] = z;
+   Vector3D change;
+    change[0]=x;
+    change[1]=y;
+    change[2]=z;
     /*************************************************************************/
-    // animacja
-   /* for(int i=0;i<60;i++)
+     //animacja
+ /*   for(int i=0;i<60;i++)
     {
-        cuboid.translate(translation/10);
+        cuboid.rotateZ(1);
+        cuboid.translate(change/10);
         sleep_for(nanoseconds(SLEEP));
         cuboid.draw(kDroneFile);
         link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-        cin.ignore(100000, '\n');
-    } */
-
-  /*  cuboid.translate(translation); //tutaj przeniesienie
-    cuboid.draw(kDroneFile); //wczytanie do tego samego pliku
-
-    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
-    double abs;
-    cin>>abs;
-    cin.ignore(100000, '\n'); */
- /***********************************************************************************************/
-    //cuboid.rotateZ(5);
+ //       cin.ignore(100000, '\n');
+    }
+*/
+    cuboid.rotateZ(0);
     cuboid.draw(kDroneFile);
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
+    cin.ignore(100000, '\n');
 
+    cuboid.translate(change); //tutaj przeniesienie
+    cuboid.draw(kDroneFile); //wczytanie do tego samego pliku
+    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
+    cin.ignore(100000, '\n');
+
+ /***********************************************************************************************/
+
+//    cuboid.rotateX(0);
+    cuboid.draw(kDroneFile);
+   link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
+    cin.ignore(100000, '\n');
+    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
 
     return 0;

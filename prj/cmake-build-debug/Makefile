@@ -123,6 +123,33 @@ project_name/fast:
 	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/build
 .PHONY : project_name/fast
 
+src/MatrixRot.o: src/MatrixRot.cpp.o
+
+.PHONY : src/MatrixRot.o
+
+# target to build an object file
+src/MatrixRot.cpp.o:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/MatrixRot.cpp.o
+.PHONY : src/MatrixRot.cpp.o
+
+src/MatrixRot.i: src/MatrixRot.cpp.i
+
+.PHONY : src/MatrixRot.i
+
+# target to preprocess a source file
+src/MatrixRot.cpp.i:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/MatrixRot.cpp.i
+.PHONY : src/MatrixRot.cpp.i
+
+src/MatrixRot.s: src/MatrixRot.cpp.s
+
+.PHONY : src/MatrixRot.s
+
+# target to generate assembly for a file
+src/MatrixRot.cpp.s:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/MatrixRot.cpp.s
+.PHONY : src/MatrixRot.cpp.s
+
 src/bottom.o: src/bottom.cpp.o
 
 .PHONY : src/bottom.o
@@ -258,6 +285,33 @@ src/mainObject.cpp.s:
 	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/mainObject.cpp.s
 .PHONY : src/mainObject.cpp.s
 
+src/menu.o: src/menu.cpp.o
+
+.PHONY : src/menu.o
+
+# target to build an object file
+src/menu.cpp.o:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/menu.cpp.o
+.PHONY : src/menu.cpp.o
+
+src/menu.i: src/menu.cpp.i
+
+.PHONY : src/menu.i
+
+# target to preprocess a source file
+src/menu.cpp.i:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/menu.cpp.i
+.PHONY : src/menu.cpp.i
+
+src/menu.s: src/menu.cpp.s
+
+.PHONY : src/menu.s
+
+# target to generate assembly for a file
+src/menu.cpp.s:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/menu.cpp.s
+.PHONY : src/menu.cpp.s
+
 src/scene.o: src/scene.cpp.o
 
 .PHONY : src/scene.o
@@ -348,6 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project_name"
 	@echo "... edit_cache"
+	@echo "... src/MatrixRot.o"
+	@echo "... src/MatrixRot.i"
+	@echo "... src/MatrixRot.s"
 	@echo "... src/bottom.o"
 	@echo "... src/bottom.i"
 	@echo "... src/bottom.s"
@@ -363,6 +420,9 @@ help:
 	@echo "... src/mainObject.o"
 	@echo "... src/mainObject.i"
 	@echo "... src/mainObject.s"
+	@echo "... src/menu.o"
+	@echo "... src/menu.i"
+	@echo "... src/menu.s"
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"

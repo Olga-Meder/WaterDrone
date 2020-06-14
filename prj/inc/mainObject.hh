@@ -17,8 +17,4 @@ public:
     MainObject() {}; //konstruktor
     virtual void draw(std::string filename) const=0; // metoda czysto wirtualna do rysowania obiektów
     ~MainObject() {}; //destruktor
-    int Size() const
-    {
-        return points.size();
-    }
 };

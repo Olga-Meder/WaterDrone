@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/project_name.dir/src/MatrixRot.cpp.o"
   "CMakeFiles/project_name.dir/src/bottom.cpp.o"
   "CMakeFiles/project_name.dir/src/cuboid.cpp.o"
   "CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
   "CMakeFiles/project_name.dir/src/main.cpp.o"
   "CMakeFiles/project_name.dir/src/mainObject.cpp.o"
+  "CMakeFiles/project_name.dir/src/menu.cpp.o"
   "CMakeFiles/project_name.dir/src/scene.cpp.o"
   "CMakeFiles/project_name.dir/src/solid.cpp.o"
   "CMakeFiles/project_name.dir/src/water.cpp.o"

@@ -33,7 +33,8 @@ public:
 
     const T &operator()( int index1,  int index2) const;
     T &operator()( int index_1, int index_2);
-    Vector<T,SIZE> operator * (Vector<T,SIZE> v); //mnożenie macierzy przez wektor
+    void copy_data(T array[][SIZE]) const; //TO
+    Vector<T,SIZE> operator * (Vector<T,SIZE> v); //mnożenie macierzy przez wektor, TO
 
 
     //przeciążenie operatora wczytania - funkcja zaprzyjaźniona
@@ -178,17 +179,34 @@ Matrix<T,SIZE> Matrix<T,SIZE>::ReplaceColumn(Vector<T,SIZE> v, int index) const
     copy.data[index]=v;
     return copy;
 }
+
 template <typename T,int SIZE>
 Vector<T,SIZE> Matrix<T,SIZE>:: operator * (Vector<T,SIZE> v)
 {
-    Vector<T,SIZE> result;
-    for(int i=0; i<SIZE;i++)
+    Vector<T, SIZE> result;
+    T tmp[SIZE][SIZE];
+    this->copy_data(tmp);
+    for (int i = 0; i < SIZE; i++)
     {
-        for(int j=0;j<SIZE;j++)
+        for (int j = 0; j < SIZE; j++)
         {
-            result[i]+=v[j]* (*this)(i,j);
+            result[i] += v[j] * tmp[i][j];
         }
-
     }
     return result;
 }
+
+/*Zdefiniowanie pomocnej funkcji kopiujacej zawartosc macierzy
+* do tablicy dwuwymiarowej*/
+template <typename T, int SIZE>
+void Matrix<T, SIZE>::copy_data(T array[][SIZE]) const
+{
+    for (int i = 0; i < SIZE; i++)
+    {
+        for (int j = 0; j < SIZE; j++)
+        {
+            array[i][j] = this->data[j][i];
+        }
+    }
+}
+
