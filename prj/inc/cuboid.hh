@@ -25,7 +25,10 @@ public:
     void rotateZ(double kat);
     void rotateY(double kat);
     void rotateX(double kat);
-
+    double get_angle()
+    {
+        return angle;
+    }
 
 };
 

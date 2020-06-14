@@ -1,10 +1,13 @@
 #include "menu.hh"
 #include <iostream>
-using namespace std;
+#include <math.h>
+#include "cuboid.hh"
+
+/*using namespace std;
 void menu()
 {
     char choice;
-    double angle;
+    double angle_rot;
     double distance;
     do
     {
@@ -12,13 +15,13 @@ void menu()
              << "o - obrót wokół osi " << endl
              << "r - ruch" << endl
              << "k - koniec" << endl;
-        cout << "obliczeanie obiektów: " /*<< Vector3D::counter*/ << endl;
+        cout << "obliczeanie obiektów: " << Vector3D::counter << endl;
         cin >> choice;
         switch (choice)
         {
             case 'o':
                 cout << "Podaj obrót w stopniach: " << endl;
-                cin >> angle;
+                cin >> angle_rot;
 
                 break;
             case 'r':
@@ -26,7 +29,11 @@ void menu()
                 cin >> distance;
                 cout << "Podaj kąt wznoszenia w stopniach" << endl;
                 cin >> angle;
-                //trzeba będzie tutaj coś dodać
+                double rad=angle*M_PI/180;
+                double x=1*cos(rad);
+                double y=0;
+                double z=1*sin(rad);
+
                 break;
             case 'k':
                 break;
@@ -36,3 +43,4 @@ void menu()
         }
     } while (choice != 'k');
 }
+*/

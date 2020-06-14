@@ -42,58 +42,68 @@ int main()
 
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
-
-
-    double distance;
-    double r;
+    /*****************************************************************************************
+     * MENU
+     */
+    char choice;
     double a;
-    cout<< "jaki dystans?"<<endl;
-    cin>>distance;
-    cout<< "jaki kąt?"<<endl;
-    cin>>a;
-    r=a*M_PI/180;
-    double x=1*cos(r);
-    double y=0;
-    double z=1*sin(r);
-   Vector3D change;
-    change[0]=x;
-    change[1]=y;
-    change[2]=z;
-    /*************************************************************************/
-     //animacja
-    for(int i=0;i<distance;i++)
+    double angle_rot;
+    double distance;
+    do
     {
-     //   cuboid.rotateZ(10);
- //       cuboid.rotateY(10);
- //       cuboid.rotateX(10);
-        cuboid.translate(change);
-        sleep_for(nanoseconds(SLEEP));
-        cuboid.draw(kDroneFile);
-        link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
- //       cin.ignore(100000, '\n');
-    }
+        cout << "MENU:" << endl
+             << "o - obrót wokół osi " << endl
+             << "r - ruch" << endl
+             << "k - koniec" << endl;
+        cout << "obliczeanie obiektów: " /*<< Vector3D::counter*/ << endl;
+        cin >> choice;
+        if(choice=='o')
+        {
+            cout << "Podaj obrót w stopniach: " << endl;
+            cin >> angle_rot;
+            //animacja
+            for(int i=0;i<angle_rot;i++)
+            {
+                cuboid.rotateZ(1);
+                sleep_for(nanoseconds(SLEEP));
+                cuboid.draw(kDroneFile);
+                link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+            }
 
-//    cuboid.rotateZ(50);
-    cuboid.draw(kDroneFile);
-    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
-    cin.ignore(100000, '\n');
+        }
+        else if(choice=='r')
+        {
+            cout << "Podaj odległość " << endl;
+            cin >> distance;
+            cout << "Podaj kąt wznoszenia w stopniach" << endl;
+            cin >> a;
+            double rad=a*M_PI/180;
+            Vector3D change;
+            change[0]=1*cos(rad);;
+            change[1]=0;
+            change[2]=1*sin(rad);
+            //animacja
+            for(int i=0;i<distance;i++)
+            {
+                cuboid.translate(change);
+                sleep_for(nanoseconds(SLEEP));
+                cuboid.draw(kDroneFile);
+                link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+            }
+        }
+        else if(choice=='k')
+        {
+            cout<<"Koniec programu"<< endl;
+            return 0;
+        }
+        else
+        {
+            cout<<"Błędny wybór, spróbuj ponownie"<<endl;
+        }
 
-    cuboid.translate(change); //tutaj przeniesienie
-    cuboid.draw(kDroneFile); //wczytanie do tego samego pliku
-    link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
-    cin.ignore(100000, '\n');
 
- /***********************************************************************************************/
+    } while (choice != 'k');
 
-//    cuboid.rotateX(0);
-    cuboid.draw(kDroneFile);
-   link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
-    cin.ignore(100000, '\n');
-    cout << "Naciśnij ENTER, aby kontynuowac" << endl;
-    cin.ignore(100000, '\n');
 
     return 0;
 

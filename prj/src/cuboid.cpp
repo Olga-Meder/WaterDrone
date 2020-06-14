@@ -53,10 +53,10 @@ void Cuboid::rotateZ(double kat)
     rot_matrix.transpose();
     for (int i = 0; i < points.size(); ++i)
     {
-        cout<<rot_matrix<<endl;
-        cout<<points[i];
+     //   cout<<rot_matrix<<endl;
+     //cout<<points[i];
         points[i] = rot_matrix * points[i];
-        cout<<points[i];
+     //   cout<<points[i];
     }
 }
 

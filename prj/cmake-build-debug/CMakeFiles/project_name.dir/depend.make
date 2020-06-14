@@ -37,6 +37,12 @@ CMakeFiles/project_name.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/project_name.dir/src/mainObject.cpp.o: ../src/mainObject.cpp
 
+CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/Matrix.hh
+CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/MatrixRot.hh
+CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/Size.hh
+CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/Vector.hh
+CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/cuboid.hh
+CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/mainObject.hh
 CMakeFiles/project_name.dir/src/menu.cpp.o: ../inc/menu.hh
 CMakeFiles/project_name.dir/src/menu.cpp.o: ../src/menu.cpp
 

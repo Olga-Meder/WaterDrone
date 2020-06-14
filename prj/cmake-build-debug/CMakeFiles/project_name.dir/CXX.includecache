@@ -28,14 +28,6 @@ Size.hh
 iostream
 -
 
-../inc/bottom.hh
-iostream
--
-string
--
-mainObject.hh
-../inc/mainObject.hh
-
 ../inc/cuboid.hh
 vector
 -
@@ -48,14 +40,6 @@ MatrixRot.hh
 mainObject.hh
 ../inc/mainObject.hh
 
-../inc/gnuplot_link.hh
-string
--
-list
--
-vector
--
-
 ../inc/mainObject.hh
 iostream
 -
@@ -64,37 +48,15 @@ vector
 Vector.hh
 ../inc/Vector.hh
 
-../inc/water.hh
-iostream
--
-string
--
-mainObject.hh
-../inc/mainObject.hh
-
-/home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp
-iostream
--
-iomanip
--
-fstream
--
-string
--
-gnuplot_link.hh
-/home/olga/Pulpit/Programowanie/dron/prj/src/gnuplot_link.hh
+/home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp
 cuboid.hh
 /home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.hh
+fstream
+-
+iostream
+-
 Matrix.hh
 /home/olga/Pulpit/Programowanie/dron/prj/src/Matrix.hh
-water.hh
-/home/olga/Pulpit/Programowanie/dron/prj/src/water.hh
-chrono
--
-thread
--
-bottom.hh
-/home/olga/Pulpit/Programowanie/dron/prj/src/bottom.hh
 cmath
 -
 
