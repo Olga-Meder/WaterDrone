@@ -18,8 +18,10 @@ CMakeFiles/project_name.dir/src/cuboid.cpp.o
  ../inc/MatrixRot.hh
  ../inc/Size.hh
  ../inc/Vector.hh
+ ../inc/bottom.hh
  ../inc/cuboid.hh
  ../inc/mainObject.hh
+ ../inc/water.hh
  /home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp
 CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o
  ../inc/gnuplot_link.hh

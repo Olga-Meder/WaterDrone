@@ -89,6 +89,16 @@ int main()
                 sleep_for(nanoseconds(SLEEP));
                 cuboid.draw(kDroneFile);
                 link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
+                if(cuboid.checkCollision()==1)
+                {
+                    cerr <<"Uwaga, jesteś na dnie" <<endl;
+                    distance=0;
+                }
+                else if(cuboid.checkCollision()==2)
+                {
+                    cerr << "Uwaga, jesteś na powierzchni" << endl;
+                    distance=0;
+                }
             }
         }
         else if(choice=='k')

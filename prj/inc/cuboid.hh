@@ -29,7 +29,7 @@ public:
     {
         return angle;
     }
-
+    int checkCollision();
 };
 
 

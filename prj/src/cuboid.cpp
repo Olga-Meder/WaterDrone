@@ -3,7 +3,8 @@
 #include <iostream>
 #include "Matrix.hh"
 #include <cmath>
-
+#include "bottom.hh"
+#include "water.hh"
 using namespace std;
 
 
@@ -81,5 +82,22 @@ void Cuboid::rotateX(double kat) {
         cout << points[i];
         points[i] = rot_matrix * points[i];
         cout << points[i];
+    }
+}
+int Cuboid::checkCollision()
+{
+    Bottom b;
+    Water w;
+    int result;
+   // cout<< translation;
+    if (translation[2] < b.getDepth()+20) //te punkty wyznaczone doświadczalnie
+    {
+        result=1;
+        return result;
+    }
+    else if(translation[2]>= w.getHeight()-5)
+    {
+        result=2;
+        return result;
     }
 }

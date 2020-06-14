@@ -13,5 +13,5 @@ public:
     Water();
     void draw(std::string filename) const override;
     ~Water() {};
-    double get_height(){return height;}
+    double getHeight(){return height;}
 };
