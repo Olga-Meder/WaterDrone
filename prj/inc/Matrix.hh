@@ -188,9 +188,10 @@ Vector<T,SIZE> Matrix<T,SIZE>:: operator * (Vector<T,SIZE> v)
     this->copy_data(tmp);
     for (int i = 0; i < SIZE; i++)
     {
+//        result[i]=0;
         for (int j = 0; j < SIZE; j++)
         {
-            result[i] += v[j] * tmp[i][j];
+            result[i]= result[i] + v[j] * tmp[i][j];
         }
     }
     return result;

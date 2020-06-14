@@ -52,26 +52,28 @@ int main()
     cout<< "jaki kąt?"<<endl;
     cin>>a;
     r=a*M_PI/180;
-    double x=distance*cos(r);
+    double x=1*cos(r);
     double y=0;
-    double z=distance*sin(r);
+    double z=1*sin(r);
    Vector3D change;
     change[0]=x;
     change[1]=y;
     change[2]=z;
     /*************************************************************************/
      //animacja
- /*   for(int i=0;i<60;i++)
+    for(int i=0;i<distance;i++)
     {
-        cuboid.rotateZ(1);
-        cuboid.translate(change/10);
+     //   cuboid.rotateZ(10);
+ //       cuboid.rotateY(10);
+ //       cuboid.rotateX(10);
+        cuboid.translate(change);
         sleep_for(nanoseconds(SLEEP));
         cuboid.draw(kDroneFile);
         link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
  //       cin.ignore(100000, '\n');
     }
-*/
-    cuboid.rotateZ(0);
+
+//    cuboid.rotateZ(50);
     cuboid.draw(kDroneFile);
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
