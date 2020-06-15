@@ -1,14 +1,13 @@
 #include "cuboid.hh"
 #include <fstream>
 #include <iostream>
-#include "Matrix.hh"
-#include <cmath>
 #include "bottom.hh"
 #include "water.hh"
 using namespace std;
 
+int MainObject::counter =0;
 
-Cuboid::Cuboid() :angle {0} // wczytanie pliku modelowego
+Cuboid::Cuboid() // wczytanie pliku modelowego
 {
     ifstream inputFile;
     inputFile.open(kModelCuboid);
@@ -23,6 +22,7 @@ Cuboid::Cuboid() :angle {0} // wczytanie pliku modelowego
     while(inputFile >> point)
     {
         points.push_back(point); //tutaj points
+        ++counter; //dodawanie wektorów
     }
     inputFile.close();
 }
@@ -39,7 +39,7 @@ void Cuboid::draw(std::string filename) const
     }
     for(int i = 0; i < points.size(); ++i)
     {
-        outputFile << points[i]+ translation; //pomnożyć to przez macierz?
+        outputFile << points[i]+ translation;
         if(i % 4 == 3) // triggers after every 4 points
         {
             outputFile << "#\n\n";
@@ -47,11 +47,11 @@ void Cuboid::draw(std::string filename) const
     }
 }
 
-void Cuboid::rotateZ(double kat)
+void Cuboid::rotateZ(double angle)
 {
 
-    MatrixRot rot_matrix('Z',kat);
-    rot_matrix.transpose();
+    MatrixRot rot_matrix('Z',angle);
+    rot_matrix.transpose(); //w szablonie zapisuje macierz transponowaną, tutaj muszę odwrócić
     for (int i = 0; i < points.size(); ++i)
     {
      //   cout<<rot_matrix<<endl;
@@ -61,7 +61,7 @@ void Cuboid::rotateZ(double kat)
     }
 }
 
-void Cuboid::rotateY(double kat) {
+/*void Cuboid::rotateY(double kat) {
 
     MatrixRot rot_matrix('Y', kat);
  //   rot_matrix.transpose();
@@ -83,14 +83,14 @@ void Cuboid::rotateX(double kat) {
         points[i] = rot_matrix * points[i];
         cout << points[i];
     }
-}
+} */
 int Cuboid::checkCollision()
 {
     Bottom b;
     Water w;
     int result;
    // cout<< translation;
-    if (translation[2] < b.getDepth()+20) //te punkty wyznaczone doświadczalnie
+    if (translation[2] <= b.getDepth()+20) //te punkty wyznaczone doświadczalnie
     {
         result=1;
         return result;

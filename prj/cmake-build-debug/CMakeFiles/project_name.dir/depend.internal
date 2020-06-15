@@ -39,19 +39,6 @@ CMakeFiles/project_name.dir/src/main.cpp.o
  /home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp
 CMakeFiles/project_name.dir/src/mainObject.cpp.o
  /home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp
-CMakeFiles/project_name.dir/src/menu.cpp.o
- ../inc/Matrix.hh
- ../inc/MatrixRot.hh
- ../inc/Size.hh
- ../inc/Vector.hh
- ../inc/cuboid.hh
- ../inc/mainObject.hh
- ../inc/menu.hh
- /home/olga/Pulpit/Programowanie/dron/prj/src/menu.cpp
-CMakeFiles/project_name.dir/src/scene.cpp.o
- /home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp
-CMakeFiles/project_name.dir/src/solid.cpp.o
- /home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp
 CMakeFiles/project_name.dir/src/water.cpp.o
  ../inc/Size.hh
  ../inc/Vector.hh

@@ -10,9 +10,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/olga/Pulpit/Programowanie/dron/prj/src/gnuplot_link.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/main.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/mainObject.cpp.o"
-  "/home/olga/Pulpit/Programowanie/dron/prj/src/menu.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/menu.cpp.o"
-  "/home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/scene.cpp.o"
-  "/home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/solid.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron/prj/src/water.cpp" "/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/water.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

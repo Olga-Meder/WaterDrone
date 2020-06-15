@@ -285,87 +285,6 @@ src/mainObject.cpp.s:
 	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/mainObject.cpp.s
 .PHONY : src/mainObject.cpp.s
 
-src/menu.o: src/menu.cpp.o
-
-.PHONY : src/menu.o
-
-# target to build an object file
-src/menu.cpp.o:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/menu.cpp.o
-.PHONY : src/menu.cpp.o
-
-src/menu.i: src/menu.cpp.i
-
-.PHONY : src/menu.i
-
-# target to preprocess a source file
-src/menu.cpp.i:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/menu.cpp.i
-.PHONY : src/menu.cpp.i
-
-src/menu.s: src/menu.cpp.s
-
-.PHONY : src/menu.s
-
-# target to generate assembly for a file
-src/menu.cpp.s:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/menu.cpp.s
-.PHONY : src/menu.cpp.s
-
-src/scene.o: src/scene.cpp.o
-
-.PHONY : src/scene.o
-
-# target to build an object file
-src/scene.cpp.o:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/scene.cpp.o
-.PHONY : src/scene.cpp.o
-
-src/scene.i: src/scene.cpp.i
-
-.PHONY : src/scene.i
-
-# target to preprocess a source file
-src/scene.cpp.i:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/scene.cpp.i
-.PHONY : src/scene.cpp.i
-
-src/scene.s: src/scene.cpp.s
-
-.PHONY : src/scene.s
-
-# target to generate assembly for a file
-src/scene.cpp.s:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/scene.cpp.s
-.PHONY : src/scene.cpp.s
-
-src/solid.o: src/solid.cpp.o
-
-.PHONY : src/solid.o
-
-# target to build an object file
-src/solid.cpp.o:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/solid.cpp.o
-.PHONY : src/solid.cpp.o
-
-src/solid.i: src/solid.cpp.i
-
-.PHONY : src/solid.i
-
-# target to preprocess a source file
-src/solid.cpp.i:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/solid.cpp.i
-.PHONY : src/solid.cpp.i
-
-src/solid.s: src/solid.cpp.s
-
-.PHONY : src/solid.s
-
-# target to generate assembly for a file
-src/solid.cpp.s:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/solid.cpp.s
-.PHONY : src/solid.cpp.s
-
 src/water.o: src/water.cpp.o
 
 .PHONY : src/water.o
@@ -420,15 +339,6 @@ help:
 	@echo "... src/mainObject.o"
 	@echo "... src/mainObject.i"
 	@echo "... src/mainObject.s"
-	@echo "... src/menu.o"
-	@echo "... src/menu.i"
-	@echo "... src/menu.s"
-	@echo "... src/scene.o"
-	@echo "... src/scene.i"
-	@echo "... src/scene.s"
-	@echo "... src/solid.o"
-	@echo "... src/solid.i"
-	@echo "... src/solid.s"
 	@echo "... src/water.o"
 	@echo "... src/water.i"
 	@echo "... src/water.s"

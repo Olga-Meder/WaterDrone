@@ -184,30 +184,25 @@ template <typename T,int SIZE>
 Vector<T,SIZE> Matrix<T,SIZE>:: operator * (Vector<T,SIZE> v)
 {
     Vector<T, SIZE> result;
-    T tmp[SIZE][SIZE];
-    this->copy_data(tmp);
+    //KOPIOWANIE DANYCH DO TABLICY TYMCZASOWEJ
+    T copy[SIZE][SIZE];
+    for(int i=0;i<SIZE;i++)
+    {
+        for(int n=0;n<SIZE;n++)
+        {
+            copy[i][n]=data[i][n];
+
+        }
+    }
     for (int i = 0; i < SIZE; i++)
     {
 //        result[i]=0;
         for (int j = 0; j < SIZE; j++)
         {
-            result[i]= result[i] + v[j] * tmp[i][j];
+            result[i]= result[i] + v[j] * copy[i][j];
         }
     }
     return result;
 }
 
-/*Zdefiniowanie pomocnej funkcji kopiujacej zawartosc macierzy
-* do tablicy dwuwymiarowej*/
-template <typename T, int SIZE>
-void Matrix<T, SIZE>::copy_data(T array[][SIZE]) const
-{
-    for (int i = 0; i < SIZE; i++)
-    {
-        for (int j = 0; j < SIZE; j++)
-        {
-            array[i][j] = this->data[j][i];
-        }
-    }
-}
 

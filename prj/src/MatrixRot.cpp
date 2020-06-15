@@ -2,9 +2,9 @@
 #include <cmath>
 #include <iostream>
 
-MatrixRot::MatrixRot(const char axis, const double &kat)
+MatrixRot::MatrixRot(const char axis, const double &angle)
 {
-    double radians= kat *M_PI/180;
+    double radians= angle *M_PI/180; //zamiana na radiany
     if(axis=='X')
     {
         (*this)(0, 0) = 1;

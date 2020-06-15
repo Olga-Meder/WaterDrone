@@ -4,14 +4,14 @@
 #include "mainObject.hh"
 using namespace std;
 
-//konstruktor i metoda rysowania tak samo jak w Cuboid
+
 Bottom::Bottom()
 {
     ifstream inputFile;
     inputFile.open(kModelBottom);
     if(!inputFile.is_open())
     {
-        cerr << "Unable to load model Water file!" //zamienić to później na polski
+        cerr << "Unable to load model Bottom file!"
              << endl;
         return;
     }
@@ -19,7 +19,8 @@ Bottom::Bottom()
     Vector3D point;
     while(inputFile >> point)
     {
-        points.push_back(point); //tutaj points
+        points.push_back(point); //tutaj dodaje points
+        ++counter;
     }
     inputFile.close();
 }
@@ -29,12 +30,12 @@ void Bottom::draw(std::string filename) const
     outputFile.open(filename);
     if(!outputFile.is_open())
     {
-        cerr << "Unable to open water file!" << endl; //to też na polski zamienić
+        cerr << "Unable to open water file!" << endl;
         return;
     }
     for(int i = 0; i < points.size(); ++i)
     {
-        outputFile << points[i]+ translation; //points  i translation
+        outputFile << points[i]+ translation;
         if(i % 4 == 3) // triggers after every 4 points
         {
             outputFile << "#\n\n";

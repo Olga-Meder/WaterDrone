@@ -3,7 +3,6 @@
 #include "Size.hh"
 #include <iostream>
 
-
 /*
  *  KLASA VECTOR
  *  Przechowuje dane w postaci jednowymiarowej tablicy double
@@ -19,6 +18,7 @@ class Vector
 {
     T data[SIZE]; //wektor z rozwiązaniami
 public:
+    //KONSTRUKTOR
     Vector();
 
     //PRZECIAZENIA OPERATOROW
