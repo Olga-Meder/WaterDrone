@@ -33,8 +33,7 @@ public:
 
     const T &operator()( int index1,  int index2) const;
     T &operator()( int index_1, int index_2);
-    void copy_data(T array[][SIZE]) const; //TO
-    Vector<T,SIZE> operator * (Vector<T,SIZE> v); //mnożenie macierzy przez wektor, TO
+    Vector<T,SIZE> operator * (Vector<T,SIZE> v); //mnożenie macierzy przez wektor
 
 
     //przeciążenie operatora wczytania - funkcja zaprzyjaźniona
