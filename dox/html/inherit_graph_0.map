@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_main_object.html" title="Główna klasa abstrakcyjna, służąca do dziedziczenia obiektów. " alt="" coords="5,56,93,83"/>
+<area shape="rect" id="node2" href="$class_bottom.html" title="Klasa dno, dziedziczy z MainObject. " alt="" coords="141,5,205,32"/>
+<area shape="rect" id="node3" href="$class_cuboid.html" title="Klasa prostopadłościan, dziedziczy z MainObject. " alt="" coords="142,56,205,83"/>
+<area shape="rect" id="node4" href="$class_water.html" title="Water" alt="" coords="145,107,202,133"/>
+</map>
